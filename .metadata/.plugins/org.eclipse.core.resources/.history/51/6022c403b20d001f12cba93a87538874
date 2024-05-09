@@ -1,0 +1,8 @@
+package ATMSourceFiles;
+import java.util.*;
+public class Home_Interface {
+	Scanner in = new Scanner(System.in);
+	public void user_Verification() {
+		
+	}
+}

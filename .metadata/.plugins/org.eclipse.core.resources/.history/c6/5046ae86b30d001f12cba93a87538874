@@ -1,0 +1,17 @@
+package ATMSourceFiles;
+import java.util.*;
+
+public class Home_Interface {
+	
+	Scanner in = new Scanner(System.in);
+	
+//	Getting the Account Number and Password
+	public void user_Verification() {
+		System.out.print("Enter Your Account Number : ");
+		String Account_Number = in.next();
+		
+		System.out.print("Enter Your Account Password : ");
+		String Account_Password = in.next();
+		
+	}
+}

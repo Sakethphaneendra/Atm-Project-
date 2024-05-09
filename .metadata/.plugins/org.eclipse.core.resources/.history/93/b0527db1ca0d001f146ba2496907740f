@@ -1,0 +1,11 @@
+package ATMSourceFiles;
+import java.util.*;
+public class Operations {
+public void op() {
+	Scanner in = new Scanner(System.in);
+	System.out.print("\n\nOperation -> 1. Cash Withdrawal \n             2. Cash Deposit \n             3. Account Balance \n             4. Exit \n\nEnter Your Option : ");
+	int Option = in.nextInt();
+	
+		
+}
+}

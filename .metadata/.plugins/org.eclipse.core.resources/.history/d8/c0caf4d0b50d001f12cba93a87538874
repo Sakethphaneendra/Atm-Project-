@@ -1,0 +1,9 @@
+package ATMSourceFiles;
+
+public interface HomePage {
+	void homeScreen();
+	void BalanceCheck();
+	void Deposit();
+	void Withdrawal();
+	
+}

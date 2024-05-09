@@ -1,0 +1,25 @@
+package ATMSourceFiles;
+import java.util.*;
+
+public class Home_Interface extends User_Verfication_Check {
+	
+	Scanner in = new Scanner(System.in);
+	User_Verfication_Check UVC = new User_Verfication_Check();
+//	Getting the Account Number and Password
+	public void User_Details() {
+		System.out.print("Enter Your Account Number : ");
+		String Account_Number = in.next();
+		
+		System.out.print("Enter Your Account Password : ");
+		String Account_Password = in.next();
+		
+		int result = UVC.User_Verfication(Account_Number,Account_Password );
+		
+		if(result ==1) {
+			System.out.println("Login Successful");
+		}
+		
+		
+		
+	}
+}

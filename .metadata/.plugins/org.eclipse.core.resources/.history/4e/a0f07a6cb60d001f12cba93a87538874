@@ -1,0 +1,29 @@
+package ATMSourceFiles;
+
+public class HomeScreen implements HomePage{
+	
+	public static void main(String s[]) {
+		Home_Interface HI = new Home_Interface();
+		HI.User_Details();
+	}
+	
+	@Override
+	public void homeScreen() {
+		System.out.println("Welcome \n\n Please Enter Your Account Number & Password Here ");
+	}
+
+	@Override
+	public void BalanceCheck() {
+	
+	}
+
+	@Override
+	public void Deposit() {
+		
+	}
+
+	@Override
+	public void Withdrawal() {
+		
+	}
+}

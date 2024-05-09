@@ -1,0 +1,21 @@
+package ATMSourceFiles;
+
+public class User_Verfication_Check {
+	
+	protected int User_Verfication(String Account_Number, String Account_Password) {
+		String Account_Number_Id[]= {"22A35A4403","21A31A4424","9613544999","9704282666"};
+		String Account_Password_Id[]= {"1233","1234","0000","151715"};
+		
+		System.out.print(Account_Number_Id[2] +" ooo "+ Account_Number_Id[0] == Account_Number +"\n" );
+		for(int i=0;i<Account_Number_Id.length;i++) {
+			if(Account_Number_Id[i] == Account_Number ) {
+				if(Account_Password_Id[i] == Account_Password) {
+					System.out.print(Account_Number_Id[i] +" "+Account_Password_Id[i]);
+					return 1;
+				}
+			}
+		}
+		return 0;
+	}
+	
+}
