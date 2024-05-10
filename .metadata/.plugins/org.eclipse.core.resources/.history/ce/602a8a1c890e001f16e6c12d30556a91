@@ -1,0 +1,36 @@
+package Project_Version_1;
+
+import java.util.Scanner;
+
+public class Operations_Avaliable extends User_Credentials {
+
+	public void Operations() {
+		
+		Scanner in = new Scanner(System.in);
+		System.out.print("\n\nOperation -> 1. BitCoin Withdrawal  \n             "
+				+ "2. BitCoin Deposit     \n             "
+				+ "3. Account Balance  \n             "
+				+ "4. Exit             \n\n           "
+				+ "Enter Your Option : ");
+		int Option = in.nextInt();
+		
+		
+		switch(Option) {
+		
+		case 1: System.out.println("\n\n\t\t BitCoin Withdrwal");
+		        break;
+		        
+		case 2: System.out.println("\n\n\t\t BitCoin Deposit");
+			    break;
+	
+		case 3: System.out.println("\n\n\t\t Account Balance");
+        break;
+        
+		case 4: System.out.println("\n\n\t\tThanks For Choosing Us ");
+	    break;
+		}
+		
+		
+		
+	}
+}

@@ -1,0 +1,31 @@
+package Project_Version_1;
+
+import java.util.Scanner;
+
+public class UserOperations extends User_Credentials{
+	Scanner in = new Scanner(System.in);
+	User_Credentials UC = new User_Credentials();
+	Operations_Avaliable OA = new Operations_Avaliable();
+	
+	public void User_Validation(){
+		System.out.print("Enter Your Account Number   : ");
+		String Account_Number = in.next();
+		
+		System.out.print("Enter Your Account Password : ");
+		String Account_Password = in.next();
+		in.close();
+		boolean UserVerfication = UC.UserVerfication();
+		
+		if(UserVerfication == true) {
+			System.out.println("Login Successful");
+			OA.Operations();
+			
+		}
+		else {
+			System.out.println("\nLogin UnSuccessful \nTry Again\n\n");
+			User_Validation();
+			
+		}
+	}
+
+}

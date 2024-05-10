@@ -1,0 +1,34 @@
+package Project_Version_1;
+
+public class User_Credentials  {
+	
+	String Account_Number_Id[]= {"22A35A4403","21A31A4424","9613544999","9704282666"};
+	String Account_Password_Id[]= {"1233","1234","0000","151715"};
+    String Account_Balance[]= {"5000","2000","8000","10000"};
+
+	public boolean UserVerfication(String UserId , String UserPassword) {
+		
+
+		
+		
+		for(int i=0;i<Account_Number_Id.length;i++) {
+			if(Account_Number_Id[i].equals(UserId)) {
+				if(Account_Password_Id[i].equals(UserPassword)) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
+	public float Withdraw(int User , float Withdraw_Bitcoin) {
+	    
+	    for(int i=0;i<Account_Number_Id.length;i++) {
+	    	
+	    }
+		
+		return (float) 0.0;
+	}
+
+
+}

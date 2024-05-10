@@ -1,0 +1,21 @@
+package Project_Version_1;
+
+import java.util.Scanner;
+
+public class Operations_Avaliable extends User_Credentials {
+
+	public void Operations() {
+		
+		Scanner in = new Scanner(System.in);
+		System.out.print("\n\nOperation -> 1. Cash Withdrawal  \n             "
+				+ "2. Cash Deposit     \n             "
+				+ "3. Account Balance  \n             "
+				+ "4. Exit             \n\n           "
+				+ "Enter Your Option : ");
+		int Option = in.nextInt();
+		in.close();
+		
+		
+		
+	}
+}
