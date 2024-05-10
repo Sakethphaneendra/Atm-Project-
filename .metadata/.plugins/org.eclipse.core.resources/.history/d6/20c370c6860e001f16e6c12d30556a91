@@ -1,0 +1,8 @@
+package Project_Version_1;
+
+public class Operations_Avaliable extends UserOperations {
+
+	public void Operations() {
+		
+	}
+}

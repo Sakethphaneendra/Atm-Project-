@@ -1,0 +1,46 @@
+package Project_Version_1;
+
+import java.util.Scanner;
+
+public class Operations_Avaliable extends User_Credentials {
+	
+	
+
+	
+	public void Operations() {
+		User_Credentials UC = new User_Credentials();
+		Scanner in = new Scanner(System.in);
+		System.out.print("\n\nOperation -> 1. BitCoin Withdrawal  \n             "
+				+ "2. BitCoin Deposit     \n             "
+				+ "3. Account Balance  \n             "
+				+ "4. Exit             \n\n           "
+				+ "Enter Your Option : ");
+		int Option = in.nextInt();
+		
+		
+		switch(Option) {
+		
+		case 1: System.out.println("\n\n\t     BitCoin Withdrwal");
+				System.out.print("Enter Number of Bitcoins to Withdraw : ");
+		        float Withdraw =in.nextFloat();
+		        if(Withdraw <= 100.0) {
+		        	UC.Withdraw(UserId,Withdraw);
+		        }
+				break;
+		        
+		        
+		case 2: System.out.println("\n\n\t     BitCoin Deposit");
+			    break;
+	
+		case 3: System.out.println("\n\n\t     Account Balance");
+        break;
+        
+		case 4: System.out.println("\n\n\t     Thanks For Choosing Us ");
+				System.exit(0);
+		break;
+		}
+		
+		
+		
+	}
+}
